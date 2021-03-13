@@ -1,0 +1,87 @@
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
+  <div class="col-2 pt-1">
+    <span class="h5 my-0 me-md-auto fw-normal wishlist_admin" (click)="redirectToWishlist()">Wish List</span>
+  </div>
+  <div class="col-2 pt-1">
+    <span class="h5 my-0 me-md-auto fw-normal recover_user_admin" (click)="redirectToRecoverUser()">Recover User</span>
+  </div>
+  <div class="col-4">
+  </div>
+  <div class="col-4 d-flex justify-content-end align-items-center">
+    <span class="btn btn-outline-primary" href="" (click)="logout()">Logout</span>
+  </div>
+</header>
+
+<div class="container">
+  <form [formGroup]="UserlistForm" (ngSubmit)="this[EventValue]()">
+    <div class="row">
+      <h3>Add New User Information</h3>
+      <table class="table">
+        <tr>
+          <td>First Name</td>
+          <td>
+            <input type="hidden" formControlName="id">
+            <input type="text" class="form-control" formControlName="firstName">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Last Name</td>
+          <td>
+            <input type="text" class="form-control" formControlName="lastName">
+          </td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>
+            <input type="text" class="form-control" formControlName="address">
+          </td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>
+            <input type="text" class="form-control" formControlName="email">
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td>
+            <input type="password" class="form-control" formControlName="password" placeholder="please input your new password">
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit" class="btn btn-primary">{{EventValue}}</button>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+
+    <div class="row">
+      <table class="table table-striped">
+        <tr>
+          <td class="d-none"></td>
+          <td><b>First Name</b></td>
+          <td><b>Last Name</b></td>
+          <td><b>Address</b></td>
+          <td><b>Email</b></td>
+          <td><b>Edit</b></td>
+          <td><b>Delete</b></td>
+        </tr>
+
+        <tr *ngFor="let user of users">
+          <td class="d-none">{{user.id}}</td>
+          <td>{{user.firstName}}</td>
+          <td>{{user.lastName}}</td>
+          <td>{{user.address}}</td>
+          <td>{{user.email}}</td>
+          <td><a (click)="EditWishlistData(user)" class="btn btn-warning">Edit</a></td>
+          <td><a (click)="DeleteWishlistData(user.id)" class="btn btn-danger">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>

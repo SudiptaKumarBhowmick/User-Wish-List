@@ -1,0 +1,12 @@
+<div class="login-form">
+  <form [formGroup]="loginForm" #loginFormDetails="ngForm" autocomplete="off" class="form-horizontal" (ngSubmit)="submit(loginFormDetails)">
+    <h4 class="modal-title">Login to Admin Account</h4>
+    <div class="form-group">
+      <input type="text" class="form-control" formControlName="Email" placeholder="Email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" formControlName="Password" placeholder="Password">
+    </div>
+    <input type="submit" class="btn btn-primary btn-block btn-lg" value="Login">
+  </form>
+</div>

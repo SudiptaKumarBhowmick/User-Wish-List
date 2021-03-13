@@ -1,0 +1,92 @@
+<header class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-body border-bottom shadow-sm">
+  <div class="col-4 pt-1">
+    <p class="h5 my-0 me-md-auto fw-normal userlist_admin" (click)="redirectToUserlist()">User List</p>
+  </div>
+  <div class="col-4 text-center">
+  </div>
+  <div class="col-4 d-flex justify-content-end align-items-center">
+    <span class="btn btn-outline-primary" href="" (click)="logout()">Logout</span>
+  </div>
+</header>
+
+<div class="container">
+  <form [formGroup]="WishlistAdminForm" (ngSubmit)="this[EventValue]()">
+    <div class="row">
+      <h3>Enter Wishlist Information</h3>
+      <table class="table">
+        <tr>
+          <td>Item Name</td>
+          <td>
+            <input type="hidden" formControlName="userWishlistId">
+            <input type="text" class="form-control" formControlName="itemName">
+          </td>
+        </tr>
+
+        <tr>
+          <td>Item Description</td>
+          <td>
+            <input type="text" class="form-control" formControlName="itemDescription">
+          </td>
+        </tr>
+        <tr>
+          <td>Web Link</td>
+          <td>
+            <input type="text" class="form-control" formControlName="webLink">
+          </td>
+        </tr>
+
+        <!--<tr class="d-none">
+          <td>
+            <input type="hidden" formControlName="userId">
+            <input type="hidden" class="form-control" formControlName="fullName">
+          </td>
+        </tr>-->
+        <tr>
+          <td>User</td>
+          <td>
+            <select formControlName="User" [(ngModel)]="SelUserId" id="User" class="form-control">
+              <option value="" selected>Select User</option>
+              <option [ngValue]="user.userId" *ngFor="let user of _service.user_list">
+                {{user.fullName}}
+              </option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <button type="submit" class="btn btn-primary">{{EventValue}}</button>
+          </td>
+        </tr>
+
+      </table>
+    </div>
+
+
+    <div class="row">
+      <table class="table table-striped">
+        <tr>
+          <td class="d-none"></td>
+          <td><b>Item Name</b></td>
+          <td><b>Item Description</b></td>
+          <td><b>Web Link</b></td>
+          <td class="d-none"></td>
+          <td><b>User Name</b></td>
+          <td><b>Edit</b></td>
+          <td><b>Delete</b></td>
+        </tr>
+
+        <tr *ngFor="let wishlist of wishLists">
+          <td class="d-none">{{wishlist.id}}</td>
+          <td>{{wishlist.itemName}}</td>
+          <td>{{wishlist.itemDescription}}</td>
+          <td>{{wishlist.webLink}}</td>
+          <td class="d-none">{{wishlist.userId}}</td>
+          <td>{{wishlist.fullName}}</td>
+          <td><a (click)="EditWishlistData(wishlist)" class="btn btn-warning">Edit</a></td>
+          <td><a (click)="DeleteWishlistData(wishlist.id)" class="btn btn-danger">Delete</a></td>
+        </tr>
+      </table>
+    </div>
+  </form>
+</div>
