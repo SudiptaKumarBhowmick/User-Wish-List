@@ -1,0 +1,11 @@
+G:\Projects 2020\UserWishlist\WebAPI\Models\bin\Debug\net5.0\Models.deps.json
+G:\Projects 2020\UserWishlist\WebAPI\Models\bin\Debug\net5.0\Models.dll
+G:\Projects 2020\UserWishlist\WebAPI\Models\bin\Debug\net5.0\ref\Models.dll
+G:\Projects 2020\UserWishlist\WebAPI\Models\bin\Debug\net5.0\Models.pdb
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.AssemblyInfoInputs.cache
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.AssemblyInfo.cs
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.csproj.CoreCompileInputs.cache
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.dll
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\ref\Models.dll
+G:\Projects 2020\UserWishlist\WebAPI\Models\obj\Debug\net5.0\Models.pdb

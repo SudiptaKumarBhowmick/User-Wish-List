@@ -1,0 +1,12 @@
+G:\Projects 2020\UserWishlist\WebAPI\Services\bin\Debug\net5.0\Services.deps.json
+G:\Projects 2020\UserWishlist\WebAPI\Services\bin\Debug\net5.0\Services.dll
+G:\Projects 2020\UserWishlist\WebAPI\Services\bin\Debug\net5.0\ref\Services.dll
+G:\Projects 2020\UserWishlist\WebAPI\Services\bin\Debug\net5.0\Services.pdb
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.csprojAssemblyReference.cache
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.AssemblyInfoInputs.cache
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.AssemblyInfo.cs
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.csproj.CoreCompileInputs.cache
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.dll
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\ref\Services.dll
+G:\Projects 2020\UserWishlist\WebAPI\Services\obj\Debug\net5.0\Services.pdb

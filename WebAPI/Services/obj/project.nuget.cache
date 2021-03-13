@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fZ6xa8iTa6uQ9sdzMQ81M/3qVjjitry3Fc6ZE6yBPW+NsizzHUqwc0/IFLUVOoZ04ZpD2GNZbx/q6H2yHH4zcA==",
+  "success": true,
+  "projectFilePath": "G:\\Projects 2020\\UserWishlist\\WebAPI\\Services\\Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.configuration.binder\\5.0.0\\microsoft.extensions.configuration.binder.5.0.0.nupkg.sha512",
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\5.0.0\\microsoft.extensions.options.configurationextensions.5.0.0.nupkg.sha512",
+    "C:\\Users\\shuvo\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
